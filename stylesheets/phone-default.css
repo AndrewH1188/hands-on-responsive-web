@@ -11,14 +11,9 @@ body {
 }
 
 
-h1 {
-    color: red;
-}
-
 /* -------- HEADER -------- */
-
 #headerWrapper {
-    background: #3b4044
+    background: #3b4044;
 }
 
 header {
@@ -79,7 +74,13 @@ nav ul li a {
 
 
 /* -------- FOOTER -------- */
-
+#footerWrapper {
+    background: #807f7f;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    margin-top: 10px;
+}
 
 
 
