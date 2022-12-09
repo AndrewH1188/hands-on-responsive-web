@@ -36,10 +36,10 @@ header h2 {
 /* -------- NAVIGATION -------- */
 #navWrapper {
     background: #e61b10;
+    padding: .75em 2%;
 }
 
-
-nav ul {
+/* nav ul {
     padding: 1em 0;
 }
 
@@ -64,8 +64,61 @@ nav ul li a {
     margin: .2em 0 ;
     padding: .6em 0;
     border-radius: 1em;
-    /* box-shadow: 1px 1px 4px #000; */
+    /* box-shadow: 1px 1px 4px #000;
+} */
+
+/* The below helps to hide the Menu on load */
+ul#myNav {
+    display: none;
 }
+/* The above helps to hide the Menu on load */
+
+button#showPhoneNav {
+    color: #fff;
+    font-weight: 600;
+    display: block;
+    border: 1px solid #222;
+    border-radius: 1.5em;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    padding: .75em 0;
+}
+
+
+nav ul {
+    border: 1px #ccc solid;
+    border-radius: .5em;
+    margin: .5em 2%;
+    background: rgba(255,255,255, 0.8);
+}
+
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: .6em;
+    border-top: 1px #ccc solid;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+nav ul li:first-child a {
+    border-top: none;
+}
+
+
+nav ul li.active a {
+    color: #ff7200;
+}
+
+
+
+
+
+
+
 
 
 
