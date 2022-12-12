@@ -1,0 +1,226 @@
+-----------------------------------------------------------------------------------------------------------/* PHONE */
+
+/* nav ul {
+    padding: 1em 0;
+}
+
+
+nav ul li {
+    margin: 0 2%;
+    width: 46%;
+    float: left;
+}
+
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.40);
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(0,0,0,0.15);
+    margin: .2em 0 ;
+    padding: .6em 0;
+    border-radius: 1em;
+    /* box-shadow: 1px 1px 4px #000;
+} */
+
+/* The below helps to hide the Menu on load */
+ul#myNav {
+    display: none;
+}
+/* The above helps to hide the Menu on load */
+
+button#showPhoneNav {
+    color: #fff;
+    font-weight: 600;
+    display: block;
+    border: 1px solid #222;
+    border-radius: 1.5em;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    padding: .75em 0;
+}
+
+
+/* nav ul {
+    border: 1px #ccc solid;
+    border-radius: .5em;
+    margin: .5em 2%;
+    background: rgba(255,255,255, 0.8);
+} */
+
+
+
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: .6em;
+    border-top: 1px #ccc solid;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+nav ul li:first-child a {
+    border-top: none;
+}
+
+
+nav ul li.active a {
+    color: #ff7200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------- 4 removed */
+
+#navWrapper {
+    padding: 0;
+}
+
+
+button#showPhoneNav {
+    display: none;
+}
+
+nav ul {
+    display: block!important;
+    /* remove phone effects */
+    padding: 0;
+    margin: 0 0 0 2%;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border-left: 1px solid rgba(255,255,255,0.4);
+}
+
+nav ul li {
+    float: left;
+}
+
+
+nav ul li a {
+    border: none;
+    padding: 1em 1.5em;
+    font-weight: 300;
+    font-size: .9em;
+    border-right: 1px solid rgba(255,255,255,0.4);
+}
+
+
+nav ul li.active a {
+    color: #fff;
+    background: #ff7200;
+}
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------/* TABLET */
+
+
+nav ul {
+    padding: 0;
+    margin-left: 2%;
+    border-left: solid 1px rgba(0,0,0,0.4);
+}
+
+nav ul li {
+    width: auto;
+    margin: 0;
+}
+
+nav ul li a {
+
+    /*remove phone effects*/
+    margin: 0;
+    background: transparent;
+    border-radius: 0;
+
+
+    /*add tablet effects*/
+    padding: 1em 1.5em;
+    font-weight: 300;
+    font-size: .9em;
+    border-right: solid 1px rgba(0,0,0,0.4);
+}  
+
+
+
+
+
+
+/* 4.4 removed */
+
+nav select {
+    display: none;
+}
+
+nav {
+    padding: 0;
+}
+
+nav ul {
+    display: block;
+    margin-left: 2%;
+    border-left: solid 1px rgba(255,255,255,0.3)
+}
+
+/* main menu items float side by side */
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    border-right: solid 1px rgba(255,255,255,0.3);
+    font-size: .9em;
+    padding: .7em .9em;
+}
+
+nav ul li.active > a {
+    background: #ff7200;
+}
+
+
+/* --------------- rules for the sub menu items------------- */
+nav ul li ul {
+    z-index: 99;
+    position: absolute;
+    margin: 0;
+    left: -999;
+    width: 10em;
+    background: #b00;
+}
+
+
+nav li:hover ul {
+    left: auto;
+}
+
+nav ul li ul li {
+    float: none;
+    border-bottom:  solid 1px rgba(0,0,0,0.3);
+} 
