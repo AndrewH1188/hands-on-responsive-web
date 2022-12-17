@@ -10,6 +10,17 @@ body {
     font-weight: 300; /*Also loaded 600 for bold*/
 }
 
+/* -------- Color Bar -------- */
+#colorbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 44px;
+    background: #e61b10;
+    width: 100%;
+}
+
+
 
 /* -------- HEADER -------- */
 #headerWrapper {

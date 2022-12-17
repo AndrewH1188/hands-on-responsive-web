@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="stylesheets/tablet.css">
     <!-- enhance-desktop -->    
     <link rel="stylesheet" href="stylesheets/desktop.css">
+    <!-- mobile-menu -->
+    <link rel="stylesheet" href="stylesheets/mobile-menu.css">
     <title>The Lollipop Shop</title>
 
     <!-- SCRIPT TO HELP OLD IE UNDERSTAND HTML5 AND MEDIA QUERIES -->
@@ -27,10 +29,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 
+    <script>
+        $(document).ready(function () {
+            $(".nav-button").click(function () {
+                $(".nav-button,.primary-nav").toggleClass("open");
+            });
+        });
+    </script>
+
+
 
 </head>
 
 <body>
+
+    <div id="colorbar"></div>
 
     <div id="headerWrapper">
         <header>
@@ -44,9 +57,9 @@
     <div id="navWrapper">
         <nav>
             <!-- <button id="showPhoneNav">Show Navigation</button> -->
-            <ul class="clearfix" id="myNav">
+            <ul class="clearfix primary-nav" id="myNav">
                 <li class="active"><a href="index.html">SPECIALS</a></li>
-                <li><a href="flavors.html">FLAVORS</a>
+                <li class="parent"><a href="flavors.html">FLAVORS</a>
                 <ul>
                     <li><a href="flavor.html#straw">Strawberry</a></li>
                     <li><a href="flavor.html#orange">Orange</a></li>
@@ -56,6 +69,8 @@
                 <li><a href="schedule.html">SCHEDULE A PARTY</a></li>
                 <li><a href="store.html">CONTACT US</a></li>
             </ul>
+            <!-- phone nav button-->
+            <button class="nav-button">Toggle Navigation</button>
         </nav>
     </div> <!-- end of the nav wrapper-->
 
@@ -87,5 +102,6 @@
 
     <!-- Script to make select options work -->
     <script src="js/optionSelectMenu.js"></script>
+
 
 </html>
