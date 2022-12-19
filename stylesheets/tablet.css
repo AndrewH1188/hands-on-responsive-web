@@ -2,58 +2,21 @@
 
 /* -------- NAVIGATION -------- */
 
-nav select {
-    display: none;
-}
+nav ul li a br {display: none;}
 
-nav {
-    padding: 0;
-}
 
-nav ul {
-    display: block;
-    margin-left: 2%;
-    border-left: 1px solid rgba(225,225,255,0.3);
-}
 
-nav ul li {
+
+
+
+
+/*-----COLS-----*/
+
+.column-6 {
+    width: 50%;
     float: left;
 }
 
-nav ul a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    border-right: 1px solid rgba(225,225,255,0.3);
-    font-size: .9em;
-    padding: .7em .9em;
-}
-
-nav ul li.active > a {
-    background: #f77200;
-}
-
-
-/* Sub menu items */
-nav ul li ul {
-    z-index: 99;
-    position: absolute;
-    margin: 0;
-    left: -999em;
-    width: 10em;
-    background: #b00;
-}
-
-
-nav ul li ul li {
-    float: none;
-    border-bottom: 1px solid rgba(0,0,0,0.3);
-    border-right: none; 
-}
-
-nav li:hover ul {
-    left: auto;
-}
 
 
 } /*end of the media query*/

@@ -1,107 +1,138 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Loads Google Open Sans font -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
-    <!-- My stylesheets -->
-    <link rel="stylesheet" href="stylesheets/reset.css">
-    <!-- phone-default -->
-    <link rel="stylesheet" href="stylesheets/phone-default.css">
-    <!-- enhance-tablet -->    
-    <link rel="stylesheet" href="stylesheets/tablet.css">
-    <!-- enhance-desktop -->    
-    <link rel="stylesheet" href="stylesheets/desktop.css">
-    <!-- mobile-menu -->
-    <link rel="stylesheet" href="stylesheets/mobile-menu.css">
-    <title>The Lollipop Shop</title>
+<meta charset="utf-8">
 
-    <!-- SCRIPT TO HELP OLD IE UNDERSTAND HTML5 AND MEDIA QUERIES -->
-    <!--[if lt IE 9]>
+<!-- This start file was built by Paul Cheney  -->
+<title>Lollipop Shop: Specials</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<!-- LOAD THE LATEST VERSION OF JQUERY-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+<!-- *************** LOAD THE GOOGLE FONT ****************** -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+
+
+
+<!-- *************** STYLE SHEETS ****************** -->
+<link href="stylesheets/reset.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="stylesheets/phone-default.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="stylesheets/tablet.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="stylesheets/desktop.css" rel="stylesheet">
+
+
+
+
+
+    
+    
+
+<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-    <![endif]-->
-
-    <!-- Latest version of jQuery from Google -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-
-    <script>
-        $(document).ready(function () {
-            $(".nav-button").click(function () {
-                $(".nav-button,.primary-nav").toggleClass("open");
-            });
-        });
-    </script>
-
-
-
+<![endif]-->
+     
+     
+     
 </head>
-
 <body>
+<div id="colorbar"></div><!-- end color bar -->
 
-    <div id="colorbar"></div>
+<div id="headerWrapper">
+<header class="clearfix">
+	
+<hgroup>
+    <h1>Your Lollipop Shop</h1>
+    <h2>Helping you start every day with a surgar fix.</h2>
+</hgroup>
+	
 
-    <div id="headerWrapper">
-        <header>
-            <h1>Your Lollipop Shop</h1>
-            <h2>Helping you start each day with a sugar fix.</h2>
-        </header>
-    </div> <!-- end of the header wrapper-->
+	
+</header>
+</div><!-- end of header wrapper -->  
+    
+    
+    
+    
+    
 
+	
+<div id="navWrapper">
+<nav class="nav ">
+    <ul class="primary-nav clearfix">
+        <li class="selected"><a href="index.html">OUR <br>SPECIALS</a></li>
+        <li><a href="who.html">WHO<br> WE ARE </a></li>
+        <li><a what="store.html">WHAT<br> WE DO </a></li>
+        <li><a href="contact.html">CONTACT<br> US </a></li>
+    </ul>
 
+</nav>
+</div><!-- end of navigation wrapper -->  
+    
 
-    <div id="navWrapper">
-        <nav>
-            <!-- <button id="showPhoneNav">Show Navigation</button> -->
-            <ul class="clearfix primary-nav" id="myNav">
-                <li class="active"><a href="index.html">SPECIALS</a></li>
-                <li class="parent"><a href="flavors.html">FLAVORS</a>
-                <ul>
-                    <li><a href="flavor.html#straw">Strawberry</a></li>
-                    <li><a href="flavor.html#orange">Orange</a></li>
-                    <li><a href="flavor.html#lemon">Lemon</a></li>
-                </ul>
-                </li>
-                <li><a href="schedule.html">SCHEDULE A PARTY</a></li>
-                <li><a href="store.html">CONTACT US</a></li>
-            </ul>
-            <!-- phone nav button-->
-            <button class="nav-button">Toggle Navigation</button>
-        </nav>
-    </div> <!-- end of the nav wrapper-->
+    
+    
+ 
+    
+    
 
-    <div id="contentWrapper">
+    
+    
+    
+<div id="contentWrapper">
         <div class="row">
-            <h1>SPECIALS</h1>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Massa placerat duis ultricies lacus sed. Sed egestas egestas 
-            fringilla phasellus faucibus scelerisque eleifend donec pretium. Ut faucibus pulvinar elementum integer enim neque. Hac 
-            habitasse platea dictumst quisque sagittis purus sit. Vestibulum lectus mauris ultrices eros in cursus turpis massa. 
-            Tempor orci dapibus ultrices in iaculis nunc. At lectus urna duis convallis convallis tellus id interdum. Eros donec ac 
-            odio tempor orci dapibus. Tortor aliquam nulla facilisi cras. Scelerisque purus semper eget duis. Ultricies mi eget mauris 
-            pharetra et ultrices neque ornare. In aliquam sem fringilla ut morbi tincidunt. Consequat nisl vel pretium lectus quam. 
-            Euismod in pellentesque massa placerat duis. Dictumst quisque sagittis purus sit amet volutpat. Aliquam sem et tortor 
-            consequat id.
+            <div class="column-12">
+                <h1>OUR SPECIALS</h1>
+            </div>
+        </div><!-- end of row -->  
+
+
+<div class="row">
+    <div class="column-6">
+        <p>LEFT - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. 
+            Mauris nunc congue nisi vitae suscipit. Eleifend mi in nulla posuere. Orci nulla pellentesque dignissim enim sit amet. Adipiscing tristique risus nec feugiat in fermentum. 
+            Aenean et tortor at risus viverra adipiscing at. Purus sit amet luctus venenatis lectus magna. Volutpat est velit egestas dui id. Urna cursus eget nunc scelerisque viverra mauris. 
+            Id volutpat lacus laoreet non curabitur gravida arcu. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum.
+        </p>
+    </div><!-- end of column -->  
+
+    <div class="row">
+        <div class="column-6">
+            <p>RIGHT - Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. 
+                Dignissim suspendisse in est ante. Donec adipiscing tristique risus nec feugiat in. 
+                Diam maecenas sed enim ut sem viverra aliquet eget. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. 
+                Accumsan sit amet nulla facilisi. Tempor orci dapibus ultrices in iaculis nunc. Auctor elit sed vulputate mi sit. Id aliquet lectus proin nibh nisl condimentum id. 
+                Eu volutpat odio facilisis mauris sit amet massa vitae. Tincidunt eget nullam non nisi est. Hendrerit gravida rutrum quisque non tellus. Sed vulputate odio ut enim blandit. 
+                Enim lobortis scelerisque fermentum dui faucibus in ornare quam.
+            </p>
         </div>
-    </div> <!-- end of the content wrapper-->
+    </div><!-- end of column -->  
+    </div>
+</div><!-- end of content wrapper -->  
 
-    <div id="footerWrapper">
-        <footer>
-            Copyright &copy; 2022 &bull; Your Lollipop Shop &bull; 123 Sugar Street &bull; 01945 278 434
-        </footer>
-    </div> <!-- end of the footer wrapper-->
 
+
+    
+    
+    
+<div id="footerWrapper">
+    <footer>
+    <p> Copyright &copy; 2014  &bull; Your Lollipop Shop &bull;  123 W. Sugar Street &bull; 1-800-555-1234</p>
+    </footer>
+</div><!-- end of footer wrapper -->  
+
+       
+ 
 </body>
-
-    <!-- Script to make phone navigation work -->
-    <script src="js/hideMenu.js"></script>
-
-    <!-- Script to make select options work -->
-    <script src="js/optionSelectMenu.js"></script>
-
-
 </html>

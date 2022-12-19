@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Loads Google Open Sans font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <!-- My stylesheets -->
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <!-- phone-default -->
+    <link rel="stylesheet" href="stylesheets/phone-default.css">
+    <!-- enhance-tablet -->    
+    <link rel="stylesheet" href="stylesheets/tablet.css">
+    <!-- enhance-desktop -->    
+    <link rel="stylesheet" href="stylesheets/desktop.css">
+    <!-- mobile-menu -->
+    <link rel="stylesheet" href="stylesheets/mobile-menu.css">
+    <title>The Lollipop Shop</title>
+
+    <!-- SCRIPT TO HELP OLD IE UNDERSTAND HTML5 AND MEDIA QUERIES -->
+    <!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+    <!-- Latest version of jQuery from Google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $(".nav-button").click(function () {
+                $(".nav-button,.primary-nav").toggleClass("open");
+            });
+        });
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <div id="colorbar"></div>
+
+    <div id="headerWrapper">
+        <header>
+            <h1>Your Lollipop Shop</h1>
+            <h2>Helping you start each day with a sugar fix.</h2>
+        </header>
+    </div> <!-- end of the header wrapper-->
+
+
+
+    <div id="navWrapper">
+        <nav>
+            <!-- <button id="showPhoneNav">Show Navigation</button> -->
+            <ul class="clearfix primary-nav" id="myNav">
+                <li class="active"><a href="index.html">SPECIALS</a></li>
+                <li class="parent"><a href="flavors.html">FLAVORS</a>
+                <ul>
+                    <li><a href="flavor.html#straw">Strawberry</a></li>
+                    <li><a href="flavor.html#orange">Orange</a></li>
+                    <li><a href="flavor.html#lemon">Lemon</a></li>
+                </ul>
+                </li>
+                <li><a href="schedule.html">SCHEDULE A PARTY</a></li>
+                <li><a href="store.html">CONTACT US</a></li>
+            </ul>
+            <!-- phone nav button-->
+            <button class="nav-button">Toggle Navigation</button>
+        </nav>
+    </div> <!-- end of the nav wrapper-->
+
+    <div id="contentWrapper">
+        <div class="row">
+            <h1>SPECIALS</h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Massa placerat duis ultricies lacus sed. Sed egestas egestas 
+            fringilla phasellus faucibus scelerisque eleifend donec pretium. Ut faucibus pulvinar elementum integer enim neque. Hac 
+            habitasse platea dictumst quisque sagittis purus sit. Vestibulum lectus mauris ultrices eros in cursus turpis massa. 
+            Tempor orci dapibus ultrices in iaculis nunc. At lectus urna duis convallis convallis tellus id interdum. Eros donec ac 
+            odio tempor orci dapibus. Tortor aliquam nulla facilisi cras. Scelerisque purus semper eget duis. Ultricies mi eget mauris 
+            pharetra et ultrices neque ornare. In aliquam sem fringilla ut morbi tincidunt. Consequat nisl vel pretium lectus quam. 
+            Euismod in pellentesque massa placerat duis. Dictumst quisque sagittis purus sit amet volutpat. Aliquam sem et tortor 
+            consequat id.
+        </div>
+    </div> <!-- end of the content wrapper-->
+
+    <div id="footerWrapper">
+        <footer>
+            Copyright &copy; 2022 &bull; Your Lollipop Shop &bull; 123 Sugar Street &bull; 01945 278 434
+        </footer>
+    </div> <!-- end of the footer wrapper-->
+
+</body>
+
+    <!-- Script to make phone navigation work -->
+    <script src="js/hideMenu.js"></script>
+
+    <!-- Script to make select options work -->
+    <script src="js/optionSelectMenu.js"></script>
+
+
+</html>

@@ -1,101 +1,149 @@
 /*-----Prevents iPhone from resizing in landscape mode -----*/
 html {-webkit-text-size-adjust: none; }
 
-/*----------- Apply a natural box layout model to all elements --------------*/
-* {box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;  }
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+
+
+
+
+/*-----BODY -----*/
 body {
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300; /*Also loaded 600 for bold*/
+	background-color: #E6E1D8;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;	/*also loaded 600 for bold*/
+	color: #494948;
 }
 
-/* -------- Color Bar -------- */
+
+
+
+/*-----COLOR BAR -----*/
 #colorbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 44px;
-    background: #e61b10;
-    width: 100%;
+	height: 4px;
+	width: 100%;
+	background-color: #e22121;
 }
 
 
 
-/* -------- HEADER -------- */
+
+
+/*-----HEADER -----*/
 #headerWrapper {
-    background: #3b4044;
+	background-color: #3B4044;
 }
-
 header {
-    padding: 1em 2% .5em 2%;
+	padding: 1em 2% .5em 2%;
 }
 
 header h1 {
-    font-size: 2.1em;
-    color: #fff;
+	font-size: 2.1em;
+	color: #fff;
 }
-
 header h2 {
-    font-size: .9em;
-    font-weight: 300;
-    color: #ddd;
-    margin-top: .75em;
+	font-size: .9em;
+	font-weight: 300;
+	color: #ddd;
+	margin-top: .75em;
 }
 
 
 
 
 
-/* -------- NAVIGATION -------- */
+/*-----NAVIGATION -----*/	
 #navWrapper {
-    background: #e61b10;
+	background-color: #e22121;	
+}
+nav ul li {
+	float: left;
+	width: 25%;	
 }
 
-nav {
-    padding: .3em 0;
+nav ul li a {
+	display: block;
+	font-size: .9em;
+	font-weight:600;
+	color: #fff;
+	text-decoration:none;
+	margin: .6em 0;
+	border-right: 3px solid rgba(255,255,255,0.3);
+	text-align: center;
+}	
+/*this turns off the last border*/
+nav ul li:last-child a {
+	border-right: none;
+}	
+	
+	
+	
+	
+
+/*-----CONTENT -----*/
+#contentWrapper  {
+	background-color: #fff;
 }
 
-nav ul {
-    display: none;
-}
-
-nav select {
-    display: block;
-    margin: 0 2%;
-    width: 96%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -------- FOOTER -------- */
-#footerWrapper {
-    background: #807f7f;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0 5px 0;
-    margin-top: 10px;
-}
-
-
-
-
-
-/* -------- Helps restore the colour in the Navigation after the float left was added -------- */
-.clearfix:after {
+#contentWrapper .row:after {
     content: "";
     display: table;
     clear: both;
+}
+
+
+#contentWrapper h1 {
+	color:#e22121;
+	font-size: 2em;
+	padding-top: 1em;
+	text-shadow: 1px 1px 2px #999;
+}
+
+
+
+/*-----COLS-----*/
+
+.column-12, .column-6 {
+    padding: .5em 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----- FOOTER -----*/
+#footerWrapper {background-color: #979791;}
+footer {
+	clear: both;
+	font-size: .7em;
+	color: #fff;
+	text-align: center;
+	padding: .6em;
+}
+footer a {color: #fff;}
+
+
+/*----- OTHER -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
