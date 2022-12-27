@@ -236,7 +236,7 @@ header h2 {
 /*-----BANNER IMAGE -----*/
 
 #banner {
-	background-image: url(images/hero-phone.jpg);
+	background-image: url(../images/hero-phone.jpg);
 	background-repeat: no-repeat;
 	background-color: #fff;
 	height: 200px;
