@@ -1,26 +1,26 @@
-@media only screen and (min-width: 1140px) {
+/* @media only screen and (min-width: 1140px) { */
 
 
 
     /*-----INSIDE THE WRAPPERS-----*/
-        header, nav, .row, footer {
+        /* header, nav, .row, footer {
             max-width: 1140px;
             margin: 0 auto; /*centers everything on the page*/
-        }
-    
+        /* } */
+     
     /*-----HEADER -----*/
-        header {
+        /* header {
             padding-top: 2em;
             padding-bottom:1em;
         }
-    
+     */
     
     
     /*-----NAVIGATION -----*/	
-    nav ul {padding-left: 1%;}
+    /* nav ul {padding-left: 1%;}
     nav ul li a:hover{text-decoration:underline;}
     nav ul li {width: auto;}
-    nav ul li a {padding: .2em 1.5em;}
+    nav ul li a {padding: .2em 1.5em;} */
     
         
         
@@ -32,13 +32,58 @@
     
 
      /*-----COLUMNS -----*/
-    .column-2 {
+    /* .column-2 {
         width: 16.666%;
     }
+         */
+    
+    
+    
+    
+    
+    /* }*/ /*end of the media query */
+
+
+
+/* SECTION 7.1 */
+
+
+    @media only screen and (min-width: 1140px) {
+
+
+
+        /*-----INSIDE THE WRAPPERS-----*/
+            header, nav, .row, footer {
+                max-width: 1140px;
+                margin: 0 auto; /*centers everything on the page*/
+            }
         
-    
-    
-    
-    
-    
-    } /*end of the media query */
+        /*-----HEADER -----*/
+            header {
+                padding-top: 2em;
+                padding-bottom:1em;
+            }
+        
+        
+        
+        /*-----NAVIGATION -----*/	
+        nav ul li a:hover{text-decoration:underline;}
+        nav ul li {width: auto;}
+        nav ul li a {padding: .2em 1.5em;}
+        
+            
+            
+            
+        
+        /*-----CONTENT -----*/
+        
+        
+        
+            
+            
+        
+        
+        
+        
+        
+        } /*end of the media query */
