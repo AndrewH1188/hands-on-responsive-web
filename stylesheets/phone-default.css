@@ -307,7 +307,7 @@ nav ul li:last-child a {
 /*----- PHOTO STYLING -----*/
 
 
-figure.col-4 {
+figure.col-4, .col-6 {
 	width: 48%;
 	margin-left: 2%;
 	float: right; /*positions image on the right hand side of the page and text wraps around this*/
@@ -318,7 +318,7 @@ figcaption {
 	font-size: .8em;
 	padding: .3em 0;
 }
-figure.col-4 img {
+figure.col-4 img , .col-6 img {
 	width: 100%;
 } 
 /* The above will only be 100% of the parent width and will never overflow 
