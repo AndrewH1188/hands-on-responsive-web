@@ -49,6 +49,16 @@
 
     /*-----NAVIGATION -----*/	
     nav ul li a br {display: none;}
+
+
+/*-----BANNER IMAGE -----*/
+
+#banner {
+	background-image: url(../images/hero-tablet.jpg);
+	height: 400px;
+}
+
+
     
     
     
@@ -66,3 +76,13 @@
         .column-9 {width: 75%;}
 
     }
+
+
+
+
+    /*----- PHOTO STYLING -----*/
+
+
+figure.col-4 {
+	width: 31.333%;
+}

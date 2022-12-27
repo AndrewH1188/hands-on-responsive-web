@@ -72,6 +72,15 @@
         nav ul li a {padding: .2em 1.5em;}
         
             
+
+
+        /*-----BANNER IMAGE -----*/
+
+#banner {
+	background-image: url(../images/hero-desktop.jpg);
+	height: 500px;
+    background-position: center;
+}
             
             
         

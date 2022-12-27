@@ -304,15 +304,25 @@ nav ul li:last-child a {
 
 
 
+/*----- PHOTO STYLING -----*/
 
 
-
-
-
-
-
-
-
+figure.col-4 {
+	width: 48%;
+	margin-left: 2%;
+	float: right; /*positions image on the right hand side of the page and text wraps around this*/
+	border: 1px solid #999;
+}
+figcaption {
+	text-align: center;
+	font-size: .8em;
+	padding: .3em 0;
+}
+figure.col-4 img {
+	width: 100%;
+} 
+/* The above will only be 100% of the parent width and will never overflow 
+the width making a user unnecissarily scroll left and rright on a page*/
 
 
 
