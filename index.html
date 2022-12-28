@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,9 +15,6 @@
 <!-- LOAD THE LATEST VERSION OF JQUERY-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<!-- PICTURE SCRIPT-->
-<script src="js/pictureFill.js"></script>
-
 
 
 <!-- *************** LOAD THE GOOGLE FONT ****************** -->
@@ -32,6 +30,7 @@
 <link href="stylesheets/tablet.css" rel="stylesheet">
 <!-- enhance-desktop -->
 <link href="stylesheets/desktop.css" rel="stylesheet">
+
 
 
 
@@ -58,11 +57,26 @@
 	
 <hgroup>
     <h1>Your Lollipop Shop</h1>
-    <h2>Helping you start every day with a surgar fix.</h2>
+    <h2>Helping you start every day with a sugar fix.</h2>
 </hgroup>
 	
+    
+<a class="tel" tabindex="-1" href="tel:(800) 555-1234">(800) 555-1234</a>
 
-	
+<!-- SOCIAL ICONS HERE-->
+
+
+<ul class="social">
+    <li class="facebook"><a href="https://facebook.com" target="_blank"><span>Facebook</span></a></li>
+    <li class="pinterest"><a href="https://pinterest.com" target="_blank"><span>Pinterest</span></a></li>
+    <li class="twitter"><a href="https://twittercom" target="_blank"><span>Twitter</span></a></li>
+    <li class="plus"><a href="https://plus.google.com" target="_blank"><span>Google Plus</span></a></li>
+
+</ul>
+
+    
+    
+    
 </header>
 </div><!-- end of header wrapper -->  
     
@@ -75,9 +89,9 @@
 <div id="navWrapper">
 <nav class="nav ">
     <ul class="primary-nav clearfix">
-        <li class="selected"><a href="index.html">OUR <br>SPECIALS</a></li>
+        <li><a href="index.html">OUR <br>SPECIALS</a></li>
         <li><a href="who.html">WHO<br> WE ARE </a></li>
-        <li><a what="store.html">WHAT<br> WE DO </a></li>
+        <li class="selected"><a what="store.html">WHAT<br> WE DO </a></li>
         <li><a href="contact.html">CONTACT<br> US </a></li>
     </ul>
 
@@ -86,7 +100,7 @@
     
 
     
-     <div id="banner"></div> <!--End of banner -->
+    
  
     
     
@@ -97,69 +111,30 @@
     
 <div id="contentWrapper">
 <div class="row">
-	<div class="column-12">
-		<h1>OUR SPECIALS</h1>
-	</div><!-- end of the column-->
-</div><!-- end of row --> 
+<div class="column-12">
+	<h1>WHAT WE DO</h1>
+
+</div><!-- end column -->
+
+<div class="column-12 ">
+<p>This week we are bringing you one of our secret recipes from our master chef Kate Birmley. </p>
+<p> <a href="watch.html">Watch</a> Kate on our YouTube channel.</p>
+<p> </span><a href="watch.html">Listen</a> to this week's podcast.</p>
+<p> </span><a href="watch.html">Download</a> and print this recipe.</p>
+
+<h2>Join our Mailing List</h2>
+<p>Join our mailing list to recieve weekly notices about our cooking show. We promise to never send you spam or sell your contact information.</p>
+<form class="signup" action="process.php" method="get" enctype="multipart/form-data">
+<label> <input type="text" placeholder="example@gmail.com" class="myinput"></label>
+<label> <input type="number" required placeholder="123-555-1234" class="myinput"></label>
+<label> <input type="text"  placeholder="skype" class="myinput"></label>
+<input type="submit" value="Sign Me Up" class="formbutton">
 
 
-<div class="row">
-	<div class="column-12">
+</form>
 
-        <figure class="col-4">
-            <img src="images/brekkie.jpg" alt="breakfast">
-            <figcaption>Breakfast at the Lollipop Shop</figcaption>
-        </figure>
-
-		<p>
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de 
-            Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 
-            translation by H. Rackham. It is a long established fact that a reader will be distracted by the readable content of a page when looking 
-            at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content 
-            here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as 
-            their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved 
-            over the years, sometimes by accident, sometimes on purpose (injected humour and the like). There are many variations of passages of Lorem 
-            Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even 
-            slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the 
-            middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true 
-            generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate 
-            Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic 
-            words etc. Where can I get some? Why do we use it? Where does it come from? What is Lorem Ipsum? Lorem Ipsum "Neque porro quisquam est qui dolorem 
-            ipsum quia dolor sit amet, consectetur, adipisci velit..." "There is no one who loves pain itself, who seeks after it and wants to have it, 
-            simply because it is pain..." Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, 
-            making it over 2000 years old.
-        </p>
-
-    <figure class="col-6">
-        <picture>
-            <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source srcset="images/teddy-desktop.jpg" media="(min-width: 1140px)">
-            <source srcset="images/teddy-tablet.jpg" media="(min-width: 640px)">
-            <source srcset="images/teddy-phone.jpg">
-            <!--[if IE 9]></video><![endif]-->
-            <img srcset="images/teddy-phone.jpg" alt="description">
-        </picture>
-    </figure>
-
-        <p>    
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, 
-            making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the 
-            more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, 
-            discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes 
-            of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. 
-            The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used 
-            since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de 
-            Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 
-            translation by H. Rackham. It is a long established fact that a reader will be distracted by the readable content of a page when looking 
-            at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content 
-            here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as 
-            their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved 
-            over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-        </p>
-	</div><!-- end of the column-->
-</div><!-- end of row --> 
-
-
+</div><!-- end column -->
+</div><!-- end row -->
 
 </div><!-- end of content wrapper -->  
     
@@ -169,4 +144,16 @@
     <footer>
     <p> Copyright &copy; 2014  &bull; Your Lollipop Shop &bull;  123 W. Sugar Street &bull; 1-800-555-1234</p>
     </footer>
+    
+    <!-- SOCIAL ICONS HERE-->
+    
+
+
+    
+    
 </div><!-- end of footer wrapper -->  
+
+       
+ 
+</body>
+</html>
