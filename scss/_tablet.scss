@@ -1,0 +1,51 @@
+@media only screen and (min-width: 641px) {
+
+
+    /*-----COLOR BAR -----*/
+        #colorbar {
+            height: 4px;
+        }
+        
+        
+    /*----- SOCIAL -----*/
+    
+    
+    header .social {
+        position: absolute;
+        top: 2em;
+        right: 2%;
+    }
+
+
+    header .social li {
+        border: none;
+        background: transparent;
+    }
+
+
+    header .social li a {
+        width: 44px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*-----NAVIGATION -----*/	
+        nav ul li a br {display: none;}
+    
+    
+    
+    /*-----CONTENT -----*/
+    
+    
+    
+    
+    } /*end of the media query */
